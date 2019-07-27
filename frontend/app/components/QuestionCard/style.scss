@@ -1,0 +1,43 @@
+.card {
+    min-height: 330px;
+    max-height: 360px;
+    min-width: 230px;
+    max-width: 275px;
+    // margin: 10px !important;
+    margin: 10px auto 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    .titleSurvey {
+        font-weight: 500;
+        font-size: 16px;  
+        color: rgba(0, 0, 0, 0.87);      
+    }
+
+    .deadlineSurvey {
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.54);        
+    }
+
+    .respondent {
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .footer {
+        margin-top: 10px;
+
+        Button {
+            margin: 0px;
+            padding: 0px;
+            color: #579E56;
+        }
+    }
+
+}

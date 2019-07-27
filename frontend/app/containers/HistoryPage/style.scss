@@ -1,0 +1,67 @@
+.history-page {
+  background-color: #F9FAFB;
+  position: fixed;
+  top: 0px;
+  bottom: 56px;
+  left: 0;
+  right: 0;
+  overflow: auto;    
+  padding-bottom: 75px;
+
+  max-width: 30rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin:0px auto;
+
+  .header {
+    margin-top: 0px;
+    background-color: #579E56;
+    height: 15%;
+    padding: 15px 0px;
+    width: 100%;    
+
+    .searchBox {
+      .root {
+        max-width: 325px;
+        margin: 0px 20px 25px;
+        // padding: 5px;
+    
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin: 0 auto 25px;
+
+        width: 88%;
+      }
+  
+      .input {
+        margin-left: 8px;
+        flex: 1;
+      }
+      
+      .iconButton {
+        padding: 10px;
+      }
+  
+      .divider {
+        width: 1px;
+        height: 28px;
+        margin: 4px;      
+      }
+    }
+  
+  }
+  .surveyList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px auto;    
+  } 
+  
+}

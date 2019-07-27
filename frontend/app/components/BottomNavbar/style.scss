@@ -1,0 +1,44 @@
+.navbar {
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  max-width: 30rem;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin:0px auto;
+
+  .navAction {
+    font-size: 10px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+    .Mui-selected {
+      color: #579E56;
+      font-size: 11px;
+    }
+
+    .navIcon {
+      width: 20px;
+      height: 20px;
+
+      .Mui-selected {
+        color: #579E56;
+      }
+    }
+  }
+
+  .MuiBottomNavigationAction-root.Mui-selected {
+    color: #579E56;
+  }
+}
