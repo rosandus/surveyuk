@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
@@ -14,27 +15,27 @@ class QuestionCard extends React.Component {
       <Card className="card">
         <div className="expSurvey">
           <div className="titleSurvey">
-              {title}
+            {title}
           </div>
           <div className="deadlineSurvey">
               Batas Pengisian: {deadline}
           </div>
           <div className="respondent">
-              {respondent.length > 0 && (`${respondent.join("/")} responden`)}
+            {respondent.length > 0 && (`${respondent.join('/')} responden`)}
           </div>
 
         </div>
         <div className="footer">
           {respondent.length === 0 && (
-              <Button size="small" color="primary">
+          <Button size="small" color="primary">
                   Isi Survei
-              </Button>
+          </Button>
           )}
           {respondent.length > 0 && (
-              <Button size="small" color="primary">
+          <Button size="small" color="primary">
                   Cek Survei
-              </Button>
-          )}                    
+          </Button>
+          )}
         </div>
       </Card>
     );
@@ -42,15 +43,15 @@ class QuestionCard extends React.Component {
 }
 
 QuestionCard.propTypes = {
-    title: PropTypes.string,
-    deadline: PropTypes.string,
-    respondent: PropTypes.any
-}
+  title: PropTypes.string,
+  deadline: PropTypes.string,
+  respondent: PropTypes.any
+};
 
 QuestionCard.defaultProps = {
-    title: 'title',
-    deadline: '',
-    respondent: []
-}
+  title: 'title',
+  deadline: '',
+  respondent: []
+};
 
 export default QuestionCard;

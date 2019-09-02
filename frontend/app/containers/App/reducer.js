@@ -6,8 +6,8 @@ export const initialState = {
   error: false,
   currentUser: false,
   userData: {
-    repositories: false,
-  },
+    repositories: false
+  }
 };
 
 function appReducer(state = initialState, action) {
@@ -18,8 +18,8 @@ function appReducer(state = initialState, action) {
         loading: true,
         error: false,
         userData: {
-          repositories: false,
-        },
+          repositories: false
+        }
       };
 
       return newState;
@@ -29,9 +29,9 @@ function appReducer(state = initialState, action) {
         ...state,
         loading: false,
         userData: {
-          repositories: action.repos,
+          repositories: action.repos
         },
-        currentUser: action.username,
+        currentUser: action.username
       };
       return newState;
     }
